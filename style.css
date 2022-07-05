@@ -63,7 +63,7 @@ nav a {
   align-content: space-around;
   align-items: stretch;
   opacity: 0;
-  /* background-color: var(--secondary-color); */
+  border-radius: 0 0 20px 20px;
   transition:all 1s;
 }
 
