@@ -13,6 +13,8 @@ body {
 nav {
   position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   height: 60px;
   width: 100vw;
   padding-left: 10px;
@@ -32,8 +34,7 @@ nav ul {
 }
 
 .dropbtn {
-  position: fixed;
-  right: 30px;
+  width: 45px;
   transition: color .6s;
 }
 
