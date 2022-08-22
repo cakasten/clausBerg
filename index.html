@@ -17,6 +17,24 @@
     <title>Claus Berg</title>
   </head>
   <body>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '465215375479890',
+          xfbml      : true,
+          version    : 'v14.0'
+        });
+        FB.AppEvents.logPageView();
+      };
+    
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
     <nav>
       <img id="icon" src="./resources/camera.png" alt="camera icon" />
 
@@ -35,63 +53,7 @@
       </div>
     </nav>
     <main>
-      <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam,
-        eos. Sed, beatae porro. Libero, deleniti officia? Similique quibusdam
-        esse facilis, qui harum libero vero dignissimos quo ratione molestias
-        ipsa iusto? Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-        Tempore atque sapiente nesciunt neque odio explicabo aspernatur
-        dignissimos quaerat sit, veniam ipsum consequatur voluptatibus ut
-        veritatis reiciendis sunt. Ducimus, asperiores illo!
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit est
-        consequuntur sunt exercitationem animi magni minima! Mollitia facilis
-        beatae dolorem minus odit similique necessitatibus ipsum distinctio
-        reiciendis tempore? Autem, nisi!
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit est
-        consequuntur sunt exercitationem animi magni minima! Mollitia facilis
-        beatae dolorem minus odit similique necessitatibus ipsum distinctio
-        reiciendis tempore? Autem, nisi!
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit est
-        consequuntur sunt exercitationem animi magni minima! Mollitia facilis
-        beatae dolorem minus odit similique necessitatibus ipsum distinctio
-        reiciendis tempore? Autem, nisi!
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit est
-        consequuntur sunt exercitationem animi magni minima! Mollitia facilis
-        beatae dolorem minus odit similique necessitatibus ipsum distinctio
-        reiciendis tempore? Autem, nisi!
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit est
-        consequuntur sunt exercitationem animi magni minima! Mollitia facilis
-        beatae dolorem minus odit similique necessitatibus ipsum distinctio
-        reiciendis tempore? Autem, nisi!
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit est
-        consequuntur sunt exercitationem animi magni minima! Mollitia facilis
-        beatae dolorem minus odit similique necessitatibus ipsum distinctio
-        reiciendis tempore? Autem, nisi!
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit est
-        consequuntur sunt exercitationem animi magni minima! Mollitia facilis
-        beatae dolorem minus odit similique necessitatibus ipsum distinctio
-        reiciendis tempore? Autem, nisi!
-      </p>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit est
-        consequuntur sunt exercitationem animi magni minima! Mollitia facilis
-        beatae dolorem minus odit similique necessitatibus ipsum distinctio
-        reiciendis tempore? Autem, nisi!
-      </p>
+      
     </main>
 
     <footer>
