@@ -3,7 +3,7 @@ console.log("imageCards:", igImageCards);
 
 // obtain instagram images and add url to img src attribute.
 fetch(
-  `https://graph.instagram.com/me/media?fields=id,media_type,media_url&access_token=IGQVJXVHp2anRNalhzWkd3dXJEbkNWR0x3NkYxQXlZARmJMb2R4NW9fMnZAPWjlRMTFhLUNtQXlTT01pUElGMmk2ck43aWE3Qzh0a0R0Nm5LeV8xaUFhXzd4a3NZAVGVDSVpfdnVWUldnb0QxZAlVTQmpNRAZDZD`
+  `https://graph.instagram.com/me/media?fields=id,media_type,media_url&access_token=`
 ).then((res) => {
   res.json().then((posts) => {
     console.log(posts);
