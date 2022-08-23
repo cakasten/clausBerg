@@ -1,22 +1,53 @@
-const appId = 3372859742957308;
-const redirectURI = "https://cakasten.github.io/clausBerg/";
+const igImageCards = document.getElementsByClassName("ig-photo");
+console.log("imageCards:", igImageCards);
 
+// obtain instagram images and add url to img src attribute.
 fetch(
-  `https://api.instagram.com/oauth/authorize?client_id=${appId}&redirect_uri=${redirectURI}&scope=user_profile,user_media&response_type=code`,
-  {mode: 'no-cors'}
-);
+  `https://graph.instagram.com/me/media?fields=id,media_type,media_url&access_token=IGQVJVYTI3OWRGd0hjM1huLS1IU29PTmVWUUppMndlVGlkV0gzYzJmVmt1RWZAPMVdBMTUyYVJzbWQzbGhhc0d5aWkxejRrNVdPWXR5Wnp2OTY3Sjdxdk1BS0lYV3pTMmhET1ZAzZA19BQmxrQW5yWHFMVQZDZD`
+).then((res) => {
+  res.json().then((posts) => {
+    console.log(posts);
+    function randomNumInRange(min, max) {
+      return Math.floor(Math.random() * (max - min) + min);
+    }
+    let instaImages = posts.data.filter((img) => img.media_type === "IMAGE");
+    console.log("instaImages:", instaImages);
 
+    // get an equally divided range from the amount of desired IG photos to be shown on webpage.
+    function setCardRanges(obj) {
+      let ranges = [];
+      let num = Math.floor(obj.length / igImageCards.length);
+      for (let i = 0; i < igImageCards.length; i++) {
+        ranges.push(i * num);
+      }
+      return ranges
+    //   console.log("ranges:", ranges);
+    }
+    (setCardRanges(instaImages));
 
-//copy and paste into browser
+    function createImageCard() {
+      let range = setCardRanges(instaImages);
 
-// https://api.instagram.com/oauth/authorize
-//   ?client_id=3372859742957308
-//   &redirect_uri=https://cakasten.github.io/clausBerg/
-//   &scope=user_profile,user_media
-//   &response_type=code
+      const secondRangeInput = (value) => {
+        if (value + 1 === range.length) {
+          return instaImages.length - 1;
+        }
+        return range[value + 1];
+      };
 
+      for (let i = 0; i < igImageCards.length; i++) {
+        console.log(setCardRanges(instaImages))
+        igImageCards[i].src =
+          instaImages[randomNumInRange(range[i], secondRangeInput(i))].media_url;
+      }
+    }
+    createImageCard();
 
+    
+    // card1.src = instaImages[randomNumInRange(0, 6)].media_url;
+    // card2.src = instaImages[randomNumInRange(6, 12)].media_url;
+    // card3.src = instaImages[randomNumInRange(12, instaImages.length)].media_url;
 
-
-
-
+    console.log(card1);
+  });
+});
