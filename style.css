@@ -130,5 +130,11 @@ footer {
 
 .ig-photo {
   width: 30%;
+  
+  /* set images to same dimensions */
+  /* height: 300px;
+  object-fit: cover; */
+
+  background-size: contain;
   margin: auto;
 }
