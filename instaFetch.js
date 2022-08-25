@@ -2,7 +2,7 @@ const igImageCards = document.getElementsByClassName("ig-photo");
 
 // obtain instagram images and add url to img src attribute.
 fetch(
-  `https://graph.instagram.com/me/media?fields=id,media_type,media_url&access_token=IGQVJYNm1Vc09MbWZAheEZAnZAjVtU3FaWTJrc29aR1pXYV9CdnFTSTdPWG8xZA3JpeUliTW1hVDhxT0s0eVhMcy1vVEtmWGExZAWlXNDM3VkoyLVJ5TW0wWHk5aG5TemhfamkwUjBBSy1fT3I4TkRVRlI3VQZDZD`
+  `https://graph.instagram.com/me/media?fields=id,media_type,media_url&access_token=`
 ).then((res) => {
   res.json().then((posts) => {
     function randomNumInRange(min, max) {
