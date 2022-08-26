@@ -17,41 +17,38 @@
     <title>Claus Berg</title>
   </head>
   <body>
-    
     <nav>
       <img id="icon" src="./resources/camera.png" alt="camera icon" />
 
-      <h1>Claus Berg Photography</h1>
+      <h1>Claus Berg <span id="titleBreak">Photography</span></h1>
 
-      <label for="toggle" class="dropbtn">
+      <label for="toggle" id="dropbtn" class="smallOnly">
         <i class="fa-solid fa-bars fa-2xl"></i>
       </label>
       <input type="checkbox" name="toggle" id="toggle" />
       <div id="drop">
-        <a href="#">Home</a>
-        <a href="albums.html">Albums</a>
-        <a href="#">Contact</a>
+        <a href="#">concerts</a>
+        <a href="#">models</a>
+        <a href="#">products</a>
+        <a href="#">skate</a>
+        <a href="#">street</a>
+        <a href="#" class="smallOnly" id="contact">Contact</a>
       </div>
     </nav>
-    <main>
-      <section id="instaPosts">
-        <img src="" alt="" class="ig-photo" id="card1">
-        <img src="" alt="" class="ig-photo" id="card2">
-        <img src="" alt="" class="ig-photo" id="card3">
-        <!-- <img src="" alt="" class="ig-photo" id="card4">
-        <img src="" alt="" class="ig-photo" id="card5">
-        <img src="" alt="" class="ig-photo" id="card6">
-        <img src="" alt="" class="ig-photo" id="card7"> -->
-      </section>
+    <main id="instaPosts">
+      <img src="" alt="" class="ig-photo" id="card1" />
+      <img src="" alt="" class="ig-photo" id="card2" />
+      <img src="" alt="" class="ig-photo" id="card3" />
+      <img src="" alt="" class="ig-photo" id="card4" />
+      <img src="" alt="" class="ig-photo" id="card5" />
     </main>
 
+    <script src="./instaFetch.js"></script>
+
     <footer>
-      <!-- flat icon attribution -->
       <a href="https://www.flaticon.com/free-icons/camera" title="camera icons"
         >Camera icons created by Freepik - Flaticon</a
       >
     </footer>
-
-    <script src="./instaFetch.js"></script>
   </body>
 </html>

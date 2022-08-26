@@ -38,7 +38,7 @@ fetch(
             randomNumInRange(range[i], secondRangeInput(i))
           ].media_url;
       }
-      
+
       for (let i = 0; i < igImageCards.length; i++) {
         igImageCards[i].range = [range[i], secondRangeInput(i)];
       }
@@ -46,6 +46,5 @@ fetch(
     createImageCard();
 
     // sets an interval time to change imgs source
-   
   });
 });

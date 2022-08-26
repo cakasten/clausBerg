@@ -2,12 +2,33 @@
   --main-color: #f4f4f2;
   --secondary-color: #bbbfca;
   --text-color: #495464;
+  font-size: 16px;
 }
 
 body {
-  margin: 110px 0 0 0;
   background-color: var(--main-color);
   color: var(--text-color);
+}
+
+#icon {
+  height: 75%;
+  margin-left: 15px;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.ig-photo {
+  width: 30%;
+  min-width: 175px;
+
+  /* set images to same dimensions */
+  /* height: 300px;
+  object-fit: cover; */
+
+  background-size: contain;
 }
 
 nav {
@@ -16,28 +37,19 @@ nav {
   left: 0;
   right: 0;
   height: 60px;
-  padding: 0 10px;
   display: flex;
   background-color: var(--secondary-color);
   align-items: center;
 }
 
-nav h1 {
+h1 {
   margin-right: auto;
   margin-left: auto;
 }
 
-nav ul {
-  width: 100px;
-  padding: 0;
-}
-
-.dropbtn {
-  transition: color .6s;
-}
-
-.dropdown li {
-  list-style: none;
+#dropbtn {
+  transition: color 0.6s;
+  margin-right: 15px;
 }
 
 nav a {
@@ -63,7 +75,7 @@ nav a {
   align-items: stretch;
   opacity: 0;
   border-radius: 0 0 20px 20px;
-  transition:all 1s;
+  transition: all 1s;
 }
 
 #drop a {
@@ -71,7 +83,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all .5s;
+  transition: all 0.5s;
   border-radius: 0;
   background-color: var(--secondary-color);
 }
@@ -86,55 +98,97 @@ nav a {
   color: var(--main-color);
 }
 
-#toggle:not(:checked) ~ #drop a {
-  display: hidden;
-
-}
-#toggle:not(:checked) ~ #drop a {
-  height: 0;
-}
-
 #toggle:checked ~ #drop {
   height: 216px;
-  width: 90px;
-  opacity: 1;
+  width: 100%;
+  opacity: 0.87;
 }
 
-#icon {
-  height: 75%;
-}
-
-a {
-  color: var(--text-color);
-  text-decoration: none;
-}
-
-footer {
-  height: 60px;
-  background-color: var(--secondary-color);
+main {
   display: flex;
-  align-items: center;
-  padding: 0 10px;
-  margin-top: 100px;
-}
-
-#instaPosts {
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  width: 90%;
-  background-color: red;
-  justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .ig-photo {
-  width: 30%;
-  
-  /* set images to same dimensions */
-  /* height: 300px;
-  object-fit: cover; */
+  width: 400px;
+  margin-top: 75px;
+  margin-bottom: 30px;
+}
 
-  background-size: contain;
-  margin: auto;
+footer {
+  height: 40px;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  margin-top: 100px;
+  width: 100vw;
+  margin-top: 100px;
+  justify-content: flex-end;
+}
+
+footer a {
+  margin-right: 10px;
+}
+
+@media screen and (min-width: 750px) {
+  body {
+    margin: 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    height: 100%;
+    width: 30%;
+    min-width: 267px;
+  }
+
+  #drop {
+    transition: all 0s;
+    position: static;
+  }
+  #drop a {
+    width: 100%;
+    flex-grow: 0;
+    transition: all 0s;
+    transition: color 0.5s, background-color 1s;
+    height: 30px;
+  }
+
+  #toggle:not(:checked) ~ #drop {
+    display: contents;
+  }
+
+  .smallOnly {
+    display: none;
+  }
+
+  #icon {
+    width: 75px;
+    height: 75px;
+    margin-right: 6px;
+  }
+
+  h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 3rem;
+    position: relative;
+  }
+
+  #titleBreak {
+    font-size: 0.87em;
+    position: relative;
+    top: -9px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+    width: 70vw;
+  }
 }
