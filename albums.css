@@ -4,6 +4,11 @@ height: 100px;
 justify-content: space-evenly;
 }
 
+#mainImage {
+    margin-top: 70px;
+    width: 350px;
+}
+
 .smallPhoto {
 width: 8%;
 height: auto;
