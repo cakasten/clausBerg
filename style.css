@@ -145,6 +145,7 @@ footer a {
     height: 100%;
     width: 30%;
     min-width: 267px;
+    max-width: 380px;
   }
 
   #drop {
@@ -155,8 +156,8 @@ footer a {
     width: 100%;
     flex-grow: 0;
     transition: all 0s;
-    transition: color 0.5s, background-color 1s;
-    height: 30px;
+    transition: color 0.5s, background-color 1.5s, border-radius 1s;
+    height: 50px;
   }
 
   #toggle:not(:checked) ~ #drop {
@@ -188,13 +189,32 @@ footer a {
 
   main {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: space-evenly;
     float: right;
     width: 70vw;
   }
 
+  .ig-photo {
+    margin-top: 0;
+  }
+
   footer {
     justify-content: flex-end;
+  }
+}
+
+@media screen and (min-width: 1267px) {
+  main {
+    margin-left: 380px;
+    width: auto;
+  }
+}
+
+@media screen and (min-width: 1574px) {
+  h1 {
+    max-width: 450px;
   }
 }
