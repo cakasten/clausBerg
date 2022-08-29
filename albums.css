@@ -1,0 +1,17 @@
+#carousel {
+display: flex;
+height: 100px;
+justify-content: space-evenly;
+}
+
+.smallPhoto {
+width: 8%;
+height: auto;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
