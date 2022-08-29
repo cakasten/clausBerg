@@ -19,3 +19,5 @@ for (let i = 0; i < albums.length; i++) {
     addPhotos(x, albums[i].name);
   }
 }
+
+
