@@ -11,7 +11,7 @@ function addPhotos(num, folderName) {
   newImg.classList.add("ig-photo", folderName);
   document.getElementById("instaPosts").append(newImg);
   
-  newImg.src = `./resources/albums/${folderName}/${num} Medium.jpeg`;
+  newImg.src = `./resources/albums/${folderName}/${num}.jpg`;
 }
 
 for (let i = 0; i < albums.length; i++) {
@@ -19,3 +19,5 @@ for (let i = 0; i < albums.length; i++) {
     addPhotos(x, albums[i].name);
   }
 }
+
+let 
