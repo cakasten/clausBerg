@@ -13,21 +13,24 @@ let albumImages = {};
 for (let i = 0; i < albums.length; i++) {
   if (albums[i].name === title) {
     albumImages = albums[i];
+    albumImages.name = albumImages.name.toLowerCase();
   }
 }
 
 let imgIndex = 1;
 const mainImage = document.getElementById("mainImage");
 
-mainImage.src = `./resources/albums/${albumImages.name.toLowerCase()}/${imgIndex} Medium.jpeg`;
+mainImage.src = `./resources/albums/${albumImages.name}/${imgIndex} Medium.jpeg`;
 
 function getOrientation(img) {
   if (img.width > img.height) {
-    img.classList.add("landscape");
+    return img.classList.add("landscape");
   } else if (img.classList.contains("landscape")) {
-    img.classList.remove("landscape");
+    return img.classList.remove("landscape");
   }
 }
+
+
 
 function increaseImg(albumObj) {
   if (imgIndex < parseInt(albumObj.photoCount, 10)) {
@@ -43,7 +46,7 @@ function decreaseImg(albumObj) {
     imgIndex -= 1;
     return (mainImage.src = `./resources/albums/${albumImages.name}/${imgIndex} Medium.jpeg`);
   }
-  imgIndex = 10;
+  imgIndex = parseInt(albumObj.photoCount);
   return (mainImage.src = `./resources/albums/${albumImages.name}/${imgIndex} Medium.jpeg`);
 }
 
@@ -55,6 +58,6 @@ function addPhotos(num, folderName) {
   newImg.src = `./resources/albums/${folderName}/${num} Medium.jpeg`;
 }
 
-for (let i = 1; i < parseInt(albumImages.photoCount, 10); i++) {
-  addPhotos(i, albumImages.name.toLowerCase());
+for (let i = 1; i <= parseInt(albumImages.photoCount, 10); i++) {
+  addPhotos(i, albumImages.name);
 }
