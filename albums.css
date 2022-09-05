@@ -9,6 +9,7 @@
 
 #mainImage {
   margin-top: 20px;
+  margin-bottom: 70px;
   width: 350px;
 }
 
@@ -25,23 +26,23 @@ main {
 }
 
 #changeImg {
-  display: flex;
-  width: 50%;
-  height: 525px;
-  justify-content: space-around;
-  font-size: 3rem;
-  position: absolute;
-  top: 20px;
+    display: flex;
+    width: 350px;
+    height: 494px;
+    justify-content: space-between;
+    font-size: 3rem;
+    position: absolute;
+    top: 60px;
 }
 
 .switchBtn {
-  all: unset;
-  font-size: 3rem;
-  width: 150px;
-  text-align: center;
-  color: #ffffff00;
-  transition: all 0.5s ease-in;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+    all: unset;
+    font-size: 3rem;
+    width: 160px;
+    text-align: center;
+    color: #ffffff00;
+    transition: all 0.5s ease-in;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .switchBtn:hover {
   color: #ffffff7e;
@@ -50,5 +51,9 @@ main {
 @media screen and (min-width: 750px) {
   .smallPhoto {
     height: 175px;
+  }
+  #changeImg {
+    height: 525px;
+    top: 20px;
   }
 }
