@@ -8,7 +8,7 @@
 }
 
 #mainImage {
-  margin-top: 20px;
+  margin-top: 60px;
   margin-bottom: 70px;
   width: 350px;
 }
@@ -28,11 +28,11 @@ main {
 #changeImg {
     display: flex;
     width: 350px;
-    height: 494px;
+    height: 525px;
     justify-content: space-between;
     font-size: 3rem;
     position: absolute;
-    top: 60px;
+    top: 68px;
 }
 
 .switchBtn {
@@ -54,6 +54,6 @@ main {
   }
   #changeImg {
     height: 525px;
-    top: 20px;
+    top: 60px;
   }
 }
