@@ -56,5 +56,5 @@ function addPhotos(num, folderName) {
 }
 
 for (let i = 1; i < parseInt(albumImages.photoCount, 10); i++) {
-  addPhotos(i, albumImages.name);
+  addPhotos(i, albumImages.name.toLowerCase());
 }
