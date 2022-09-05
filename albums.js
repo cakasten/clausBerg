@@ -22,33 +22,37 @@ const mainImage = document.getElementById("mainImage");
 
 mainImage.src = `./resources/albums/${albumImages.name}/${imgIndex} Medium.jpeg`;
 
-function getOrientation(img) {
+function getOrientation (img) {
   if (img.width > img.height) {
-    return img.classList.add("landscape");
-  } else if (img.classList.contains("landscape")) {
-    return img.classList.remove("landscape");
+    img.classList.add('landscape')
+  } else if (img.classList.contains('landscape')) {
+    img.classList.remove('landscape')
   }
-}
-
-
+} 
 
 function increaseImg(albumObj) {
   if (imgIndex < parseInt(albumObj.photoCount, 10)) {
     imgIndex += 1;
-    return (mainImage.src = `./resources/albums/${albumImages.name}/${imgIndex} Medium.jpeg`);
+     (mainImage.src = `./resources/albums/${albumImages.name}/${imgIndex} Medium.jpeg`);
+     return;
   }
   imgIndex = 1;
-  return (mainImage.src = `./resources/albums/${albumImages.name}/${imgIndex} Medium.jpeg`);
+   (mainImage.src = `./resources/albums/${albumImages.name}/${imgIndex} Medium.jpeg`);
+   return;
 }
 
 function decreaseImg(albumObj) {
   if (imgIndex > 1) {
     imgIndex -= 1;
-    return (mainImage.src = `./resources/albums/${albumImages.name}/${imgIndex} Medium.jpeg`);
+     (mainImage.src = `./resources/albums/${albumImages.name}/${imgIndex} Medium.jpeg`);
+     return;
   }
   imgIndex = parseInt(albumObj.photoCount);
-  return (mainImage.src = `./resources/albums/${albumImages.name}/${imgIndex} Medium.jpeg`);
+   (mainImage.src = `./resources/albums/${albumImages.name}/${imgIndex} Medium.jpeg`);
+   return;
 }
+
+
 
 function addPhotos(num, folderName) {
   const newImg = document.createElement("img");
