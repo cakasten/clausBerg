@@ -19,7 +19,7 @@ for (let i = 0; i < albums.length; i++) {
 let imgIndex = 1;
 const mainImage = document.getElementById("mainImage");
 
-mainImage.src = `./resources/albums/${albumImages.name}/${imgIndex} Medium.jpeg`;
+mainImage.src = `./resources/albums/${albumImages.name.toLowerCase()}/${imgIndex} Medium.jpeg`;
 
 function getOrientation(img) {
   if (img.width > img.height) {
