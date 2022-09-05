@@ -56,6 +56,9 @@ function addPhotos(num, folderName) {
   document.getElementById("carousel").append(newImg);
 
   newImg.src = `./resources/albums/${folderName}/${num} Medium.jpeg`;
+  newImg.addEventListener('click', () => {
+    mainImage.src = newImg.src;
+  })
 }
 
 for (let i = 1; i <= parseInt(albumImages.photoCount, 10); i++) {
