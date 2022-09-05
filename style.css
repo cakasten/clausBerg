@@ -144,7 +144,7 @@ footer a {
     align-content: flex-start;
     height: 100%;
     width: 30%;
-    min-width: 267px;
+    /* min-width: 267px; */
     max-width: 380px;
   }
 
@@ -206,10 +206,31 @@ footer a {
   }
 }
 
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 1.1rem;
+  }
+
+  #icon {
+    margin-left: 5px;
+  }
+
+  #dropbtn {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 750px) {
+  h1 {
+    font-size: 2.3rem;
+  }
+}
+
 @media screen and (min-width: 1267px) {
   main {
     margin-left: 380px;
     width: auto;
+    float: none;
   }
 }
 
