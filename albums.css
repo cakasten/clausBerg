@@ -4,17 +4,21 @@
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
+  height: 20vh;
+  overflow: scroll;
 }
 
 #mainImage {
-  margin-top: 60px;
-  margin-bottom: 70px;
-  width: 350px;
+  margin-top: 65px;
+  margin-bottom: 5px;
+  height: 69vh;
+  max-width: 95vw;
+  object-fit: cover;
 }
 
 .smallPhoto {
-  height: 125px;
+  height: 19vh;
   margin: 5px;
   width: auto;
 }
@@ -24,37 +28,73 @@ main {
   flex-direction: column;
   align-content: center;
   align-items: center;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  height: 100vh;
 }
 
 #changeImg {
-    display: flex;
-    width: 350px;
-    height: 525px;
-    justify-content: space-between;
-    font-size: 3rem;
-    position: absolute;
-    top: 68px;
+  display: flex;
+  width: 95vw;
+  max-width: 450px;
+  height: 69vh;
+  justify-content: space-between;
+  font-size: 3rem;
+  position: absolute;
+  top: 65px;
 }
 
 .switchBtn {
-    all: unset;
-    font-size: 3rem;
-    width: 160px;
-    text-align: center;
-    color: #ffffff00;
-    transition: all 0.5s ease-in;
-    font-family: Verdana, Tahoma, sans-serif;
+  all: unset;
+  font-size: 3rem;
+  width: 160px;
+  text-align: center;
+  color: #ffffff00;
+  transition: all 0.5s ease-in;
+  font-family: Verdana, Tahoma, sans-serif;
 }
 .switchBtn:hover {
   color: #ffffff7e;
 }
 
 @media screen and (min-width: 750px) {
-  .smallPhoto {
-    height: 175px;
+  #carousel {
+    width: 70%;
   }
   #changeImg {
-    height: 525px;
-    top: 60px;
+    width: 450px;
+    height: 69vh;
+    top: 25px;
+  }
+  #mainImage {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1267px){
+  nav {
+    max-width: initial;
+  }
+
+main {
+    margin-left: 380px;
+    width: 70vw;
+}
+}
+
+@media screen and (min-height: 370px) and (max-height: 400px) {
+  main {
+    width: 100vw;
+  }
+
+  #mainImage {
+    height: 60vh;
+  }
+  #changeImage {
+    height: 60vh;
+  }
+  #carousel {
+    width: 60%;
   }
 }
