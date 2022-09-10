@@ -67,9 +67,9 @@ main {
     height: 69vh;
     top: 25px;
   }
-  #mainImage {
+  /* #mainImage {
     margin-top: 0;
-  }
+  } */
 }
 
 @media screen and (min-width: 1267px){
