@@ -67,7 +67,7 @@ nav a {
   position: fixed;
   width: 90px;
   height: 0;
-  top: 60px;
+  top: 8vh;
   right: 0;
   overflow: hidden;
   flex-direction: column;
