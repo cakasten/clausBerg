@@ -1,48 +1,53 @@
-#carousel {
-  display: flex;
-  height: 100px;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 90%;
-  height: 18vh;
-  overflow: scroll;
-}
+/* body {
+  margin: 0;
+} */
 
-#mainImage {
-  margin-top: 75px;
-  margin-bottom: 5px;
-  height: 69vh;
-  max-width: 95vw;
-  object-fit: cover;
-}
-
-.smallPhoto {
-  height: 17vh;
-  margin: 5px;
-  width: auto;
+nav {
+  width: 100vw;
 }
 
 main {
+  position: relative;
+  top: 55px;
+  height: 90vh;
+  justify-content: space-around;
+}
+
+#selectedPhoto {
+  width: 95%;
+  height: 60vh;
   display: flex;
-  flex-direction: column;
-  align-content: center;
   align-items: center;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  height: 100vh;
+  justify-content: center;
+}
+
+#mainImage {
+  width: 100%;
 }
 
 #changeImg {
   display: flex;
-  width: 95vw;
-  max-width: 450px;
-  height: 69vh;
+  width: 100%;
+  height: 79%;
   justify-content: space-between;
   font-size: 3rem;
   position: absolute;
-  top: 65px;
+  top: 0px;
+}
+
+#gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 17vh;
+  overflow: scroll;
+}
+
+.smallPhoto {
+  height: 82%;
+  margin: 5px;
+  width: auto;
 }
 
 .switchBtn {
@@ -59,38 +64,29 @@ main {
 }
 
 @media screen and (min-width: 750px) {
-  #carousel {
-    width: 70%;
+  #gallery {
   }
   #changeImg {
-    width: 450px;
-    height: 69vh;
-    top: 25px;
   }
   /* #mainImage {
     margin-top: 0;
   } */
 }
 
-@media screen and (min-width: 1267px){
+@media screen and (min-width: 1267px) {
   nav {
     max-width: initial;
   }
 
-main {
-    margin-left: 380px;
-    width: 70vw;
-}
+  main {
+  }
 }
 
 @media screen and (min-height: 370px) and (max-height: 400px) {
   #mainImage {
-    height: 60vh;
   }
   #changeImage {
-    height: 60vh;
   }
-  #carousel {
-    width: 60%;
+  #gallery {
   }
 }

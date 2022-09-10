@@ -41,12 +41,18 @@
       </div>
     </nav>
     <main>
-      <img src="" id="mainImage" alt="" />
-      <span id="changeImg"
-        ><button class="switchBtn" onclick="decreaseImg(albumImages)"><</button>
-        <button class="switchBtn" onclick="increaseImg(albumImages)">></button></span
-      >
-      <div id="carousel"></div>
+      <div id="selectedPhoto">
+        <img src="" id="mainImage" alt="" />
+        <div id="changeImg"
+          ><button class="switchBtn" onclick="decreaseImg(albumImages)">
+            <
+          </button>
+          <button class="switchBtn" onclick="increaseImg(albumImages)">
+            >
+          </button>
+        </div>
+      </div>
+      <div id="gallery"></div>
     </main>
     <script src="albums.js"></script>
   </body>

@@ -57,7 +57,7 @@ function decreaseImg(albumObj) {
 function addPhotos(num, folderName) {
   const newImg = document.createElement("img");
   newImg.classList.add("smallPhoto");
-  document.getElementById("carousel").append(newImg);
+  document.getElementById("gallery").append(newImg);
 
   newImg.src = `./resources/albums/${folderName}/${num} Medium.jpeg`;
   newImg.addEventListener('click', () => {
