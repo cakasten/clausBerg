@@ -1,16 +1,16 @@
-/* body {
-  margin: 0;
+
+/* nav {
+  width: 100vw;
 } */
 
-nav {
-  width: 100vw;
-}
-
-main {
+#albumMain {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
-  top: 55px;
-  height: 90vh;
-  justify-content: space-around;
+  top: 70px;
+  height: 77vh;
 }
 
 #selectedPhoto {
@@ -29,26 +29,10 @@ main {
 #changeImg {
   display: flex;
   width: 100%;
-  height: 70%;
+  height: 74%;
   justify-content: space-between;
   font-size: 3rem;
   position: absolute;
-  top: 12px;
-}
-
-#gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  height: 17vh;
-  overflow: scroll;
-}
-
-.smallPhoto {
-  height: 82%;
-  margin: 5px;
-  width: auto;
 }
 
 .switchBtn {
@@ -63,6 +47,24 @@ main {
 .switchBtn:hover {
   color: #ffffff7e;
 }
+
+#gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 17vh;
+  width: 85%;
+  overflow: scroll;
+}
+
+.smallPhoto {
+  height: 68%;
+  margin: 5px;
+  width: auto;
+}
+
+
 
 @media screen and (min-width: 750px) {
   #gallery {
