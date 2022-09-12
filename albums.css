@@ -67,14 +67,31 @@
 
 
 @media screen and (min-width: 750px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  #titleBreak {
+    font-size: 0.8rem;
+  }
+
+  #albumMain {
+    top: 25px;
+    left: 30%;
+    width: 70%;
+  }
+
+  #changeImage {
+    width: auto;
+  }
+
   #gallery {
+    width: 60%;
   }
-  #changeImg {
+
+  .smallPhoto {
+    height: 90%;
   }
-  /* #mainImage {
-    margin-top: 0;
-  } */
-}
+  
 
 @media screen and (min-width: 1267px) {
   nav {
