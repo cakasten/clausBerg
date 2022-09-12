@@ -53,13 +53,13 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 17vh;
+  height: 25vh;
   width: 85%;
   overflow: scroll;
 }
 
 .smallPhoto {
-  height: 68%;
+  height: 54%;
   margin: 5px;
   width: auto;
 }
