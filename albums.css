@@ -1,14 +1,11 @@
-/* nav {
-  width: 100vw;
-} */
 
 #albumMain {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  position: relative;
-  top: 70px;
+  position: fixed;
+  top: 90px;
   height: 77vh;
 }
 
@@ -52,37 +49,29 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  height: 25vh;
+  height: 30%;
   width: 85%;
   overflow: scroll;
 }
 
 .smallPhoto {
-  height: 54%;
+  height: 73%;
   margin: 5px;
   width: auto;
 }
 
 @media screen and (min-width: 750px) {
-  h1 {
-    font-size: 1.6rem;
-    max-width: 248px;
-  }
-  #titleBreak {
-    font-size: 1.4rem;
+  body {
+    height: 100vh;
   }
 
-  nav {
-    float: left;
-    height: 87vh;
-  }
 
   #albumMain {
-    top: 10px;
-    /* left: 30%; */
+    position: relative;
     width: 70%;
-    /* height: 95vh; */
     justify-content: space-between;
+    top: 25px;
+    height: 95%;
   }
 
   #selectedPhoto {
@@ -97,10 +86,11 @@
 
   #gallery {
     width: 65%;
+    height: 25%;
   }
 
   .smallPhoto {
-    height: 65%;
+    height: 85%;
   }
 }
 

@@ -8,6 +8,7 @@
 body {
   background-color: var(--main-color);
   color: var(--text-color);
+  height: 100vh;
 }
 
 #icon {
@@ -140,6 +141,7 @@ footer a {
   }
 
   nav {
+    float: left;
     position: static;
     display: flex;
     flex-direction: column;
@@ -198,7 +200,9 @@ footer a {
   }
 
   .ig-photo {
-    margin-top: 0;
+    max-height: 95vh;
+    width: auto;
+    margin-top: 2.5vh;
   }
 
   footer {
@@ -206,7 +210,8 @@ footer a {
   }
 }
 
-
+@media screen and (max-height: 450px) {
+}
 
 @media screen and (max-width: 400px) {
   h1 {
