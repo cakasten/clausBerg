@@ -74,14 +74,14 @@
 
   nav {
     float: left;
-    height: 100vh;
+    height: 87vh;
   }
 
   #albumMain {
     top: 10px;
     /* left: 30%; */
     width: 70%;
-    height: 95vh;
+    /* height: 95vh; */
     justify-content: space-between;
   }
 
