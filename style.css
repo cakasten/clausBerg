@@ -140,13 +140,14 @@ footer a {
   }
 
   nav {
+    position: static;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
     height: 100%;
     width: 30%;
     /* min-width: 267px; */
-    max-width: 380px;
+    /* max-width: 380px; */
   }
 
   #drop {
@@ -194,7 +195,8 @@ footer a {
     align-items: center;
     justify-content: space-evenly;
     float: right;
-    width: 70vw;
+    width: 70%;
+    left: 30%;
   }
 
   .ig-photo {
@@ -205,6 +207,8 @@ footer a {
     justify-content: flex-end;
   }
 }
+
+
 
 @media screen and (max-width: 400px) {
   h1 {
@@ -223,14 +227,6 @@ footer a {
 @media screen and (max-width: 1000px) and (min-width: 750px) {
   h1 {
     font-size: 2.3rem;
-  }
-}
-
-@media screen and (min-width: 1267px) {
-  main {
-    margin-left: 380px;
-    width: auto;
-    float: none;
   }
 }
 
