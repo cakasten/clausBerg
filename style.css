@@ -24,11 +24,6 @@ a {
 .ig-photo {
   width: 30%;
   min-width: 175px;
-
-  /* set images to same dimensions */
-  /* height: 300px;
-  object-fit: cover; */
-
   background-size: contain;
 }
 
@@ -142,7 +137,7 @@ footer a {
 
   nav {
     float: left;
-    position: static;
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-content: flex-start;
