@@ -38,6 +38,9 @@ nav {
   background-color: var(--secondary-color);
   align-items: center;
 }
+#contact {
+  display: none;
+}
 
 h1 {
   margin-right: auto;
@@ -109,7 +112,7 @@ main {
 
 .ig-photo {
   width: 400px;
-  max-width: 100%;
+  max-width: 95%;
   margin-top: 75px;
   margin-bottom: 30px;
 }
@@ -143,6 +146,10 @@ footer a {
     align-content: flex-start;
     height: 100%;
     width: 30%;
+  }
+
+  #contact {
+    display: contents;
   }
 
   #drop {
